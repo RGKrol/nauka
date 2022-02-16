@@ -12,7 +12,3 @@ git diff		- podaje różnice pomiędzy poczekalnią a dyskiem
 # utrwalenie stanu poczekalni - TYLKO LOKALNIE
 git commit -m "1 commit, pierwszy zapis/utrwalenie"
 
-
-
-
-
