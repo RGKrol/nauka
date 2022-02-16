@@ -1,0 +1,18 @@
+git init 		- tworzy nowe repo w aktualnym katalogu
+
+git status		- aktualny status projektu
+- branch master: gałęź master
+- commits:	zatwierdzenia kodu, utrwalenia kodu, zapisy kodu
+- stage: etap prac, stadium prac
+
+git add file.*	- dodaje plik do poczekalni
+
+git diff		- podaje różnice pomiędzy poczekalnią a dyskiem
+
+# utrwalenie stanu poczekalni - TYLKO LOKALNIE
+git commit -m "1 commit, pierwszy zapis/utrwalenie"
+
+
+
+
+
