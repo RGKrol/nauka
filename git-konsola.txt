@@ -8,7 +8,27 @@ git status		- aktualny status projektu
 git add file.*	- dodaje plik do poczekalni
 
 git diff		- podaje różnice pomiędzy poczekalnią a dyskiem
-
+ 
 # utrwalenie stanu poczekalni - TYLKO LOKALNIE
 git commit -m "1 commit, pierwszy zapis/utrwalenie"
+
+### git flow ###
+master --- hotfix --- dev --- feature
+
+git branch dev      --- tworzymy/dodajemy nowego brancha/gałąź ale nie przechodzimy na niego
+git checkout dev    --- przełącza na branch'a/gałąź "dev"
+git checkout -b feature/task-1    --- dwa w jednym -> tworzy nowy branch i na niego przełącza !!!
+
+## łączenie "z powrotem" branchy
+git checkout dev    --- powrót do brancha "dev"
+git merge --no-ff -m "Merge feature/task-1 <-- połącz task-1 z obecnym 'dev'" feature/task-1  
+                    --- --no-ff <= wymusza łączenie do aktualnego brancha
+                    --- na końcu musi być nazwa łączonego/dołączanego brancha
+git branch -d feature/task-1    --- usuwanie wskazanego brancha (skoro połączona do dev to stary nie jest już potrzebny)                    
+
+
+git log                     --- pokazuje logi
+git log --pretty=oneline    --- pokazuje logi w skróconej wersji (historię commitów)
+                            - w nawiasach info na której gałęzi jesteśmy/z którą jesteśmy zgodni
+                             
 
